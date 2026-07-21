@@ -15,7 +15,7 @@
     {
       "id": "tactical-drone-defense",
       "name": "Tactical Drone Defense",
-      "version": "2.0.0",
+      "version": "1.4.0",
       "path": "games/tactical-drone-defense/",
       "description": "Defend your base from waves of enemy drones in this strategic tower defense game.",
       "thumbnail": "cover.png",
@@ -26,14 +26,14 @@
       "releaseDate": "2026-07-04",
       "update": {
         "available": false,
-        "latestVersion": "2.0.0",
+        "latestVersion": "1.4.0",
         "downloadUrl": null
       }
     },
     {
       "id": "sky-ace",
       "name": "Sky Ace",
-      "version": "1.0.0",
+      "version": "2.0.0",
       "path": "games/sky-ace/",
       "description": "Take to the skies in this thrilling aerial combat game.",
       "thumbnail": "cover.png",
@@ -44,7 +44,7 @@
       "releaseDate": "2026-07-04",
       "update": {
         "available": false,
-        "latestVersion": "1.0.0",
+        "latestVersion": "2.0.0",
         "downloadUrl": null
       }
     },
