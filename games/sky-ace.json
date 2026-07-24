@@ -1,0 +1,54 @@
+{
+  "$schema": "../schema/registry.schema.json",
+  "id": "sky-ace",
+  "name": "Sky Ace",
+  "developer": "MCM Games",
+  "description": "Sky Ace is a fast-paced 3D flight simulator where you pilot a robot jet through an endless sky, dodging dangerous mountains, managing fuel, and collecting golden rings to achieve the ultimate high score.",
+  "genre": "Flight Simulator",
+  "tags": ["flight", "3d", "arcade", "endless"],
+  "media": {
+    "thumbnail": {
+      "url": "cover.png",
+      "alt": "Sky Ace cover art"
+    }
+  },
+  "channels": {
+    "stable": {
+      "version": "2.0.0",
+      "releaseDate": "2026-07-11",
+      "download": null,
+      "requirements": {
+        "os": ["macos", "windows", "linux"],
+        "ram": 512,
+        "storage": 50
+      },
+      "releaseNotes": {
+        "version": "2.0.0",
+        "date": "2026-07-11",
+        "changes": [
+          "Overhauled file structure"
+        ]
+      }
+    }
+  },
+  "changelog": [
+    {
+      "version": "2.0.0",
+      "date": "2026-07-11",
+      "channel": "stable",
+      "changes": [
+        "Overhauled file structure"
+      ]
+    },
+    {
+      "version": "1.2.9",
+      "date": "2026-07-10",
+      "channel": "stable",
+      "changes": [
+        "Added new biomes",
+        "Added blimps",
+        "Added achievements"
+      ]
+    }
+  ]
+}

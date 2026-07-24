@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/AlM129/game-hub-registry/schema/registry.schema.json",
+  "title": "Game Hub Registry Schema",
+  "description": "Schema for the Game Hub downloadable game registry",
+  "type": "object",
+  "definitions": {
+    "gameIndexEntry": {
+      "type": "object",
+      "required": ["id", "name", "developer", "metaUrl"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique game identifier (kebab-case)",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the game"
+        },
+        "developer": {
+          "type": "string",
+          "description": "Developer or publisher name"
+        },
+        "genre": {
+          "type": "string",
+          "description": "Game genre"
+        },
+        "featured": {
+          "type": "boolean",
+          "description": "Whether this game is featured in the launcher"
+        },
+        "thumbnail": {
+          "type": "string",
+          "description": "URL or relative path to the game thumbnail"
+        },
+        "metaUrl": {
+          "type": "string",
+          "description": "Path to the per-game metadata file"
+        }
+      }
+    },
+    "gameMetadata": {
+      "type": "object",
+      "required": ["id", "name", "developer", "description", "channels"],
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "Reference to the JSON schema"
+        },
+        "id": {
+          "type": "string",
+          "description": "Unique game identifier (kebab-case)",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the game"
+        },
+        "developer": {
+          "type": "string",
+          "description": "Developer or publisher name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Full description of the game"
+        },
+        "sourceRepository": {
+          "type": "string",
+          "description": "Optional URL to the game's source code repository"
+        },
+        "homepage": {
+          "type": "string",
+          "description": "Optional URL to the game's homepage"
+        },
+        "genre": {
+          "type": "string",
+          "description": "Game genre"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Search/filter tags for the game",
+          "items": { "type": "string" }
+        },
+        "media": {
+          "type": "object",
+          "properties": {
+            "thumbnail": {
+              "type": "object",
+              "properties": {
+                "url": { "type": "string" },
+                "width": { "type": "integer" },
+                "height": { "type": "integer" },
+                "alt": { "type": "string" }
+              }
+            },
+            "screenshots": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "url": { "type": "string" },
+                  "alt": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "channels": {
+          "type": "object",
+          "description": "Release channels for the game",
+          "minProperties": 1,
+          "additionalProperties": {
+            "$ref": "#/definitions/channel"
+          }
+        },
+        "changelog": {
+          "type": "array",
+          "description": "Full changelog across all channels",
+          "items": {
+            "$ref": "#/definitions/changelogEntry"
+          }
+        }
+      }
+    },
+    "channel": {
+      "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Version string for this channel (e.g. '1.4.0', '2.0.0-dev')"
+        },
+        "releaseDate": {
+          "type": "string",
+          "format": "date",
+          "description": "Release date in YYYY-MM-DD format"
+        },
+        "download": {
+          "oneOf": [
+            {
+              "type": "null",
+              "description": "No downloadable package available for this channel"
+            },
+            {
+              "$ref": "#/definitions/downloadPackage"
+            }
+          ]
+        },
+        "requirements": {
+          "$ref": "#/definitions/requirements"
+        },
+        "releaseNotes": {
+          "$ref": "#/definitions/changelogEntry"
+        },
+        "notes": {
+          "type": "string",
+          "description": "Additional notes about this channel (e.g. 'Development builds available from source repository')"
+        }
+      }
+    },
+    "downloadPackage": {
+      "type": "object",
+      "required": ["url", "format", "size"],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to download the game package"
+        },
+        "format": {
+          "type": "string",
+          "enum": ["zip", "tar.gz", "7z"],
+          "description": "Archive format of the package"
+        },
+        "size": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "File size in bytes"
+        },
+        "checksum": {
+          "type": "object",
+          "required": ["algorithm", "hash"],
+          "properties": {
+            "algorithm": {
+              "type": "string",
+              "enum": ["sha256", "sha512", "md5"],
+              "description": "Hash algorithm used"
+            },
+            "hash": {
+              "type": "string",
+              "description": "Hex-encoded hash value"
+            }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "properties": {
+        "os": {
+          "type": "array",
+          "description": "Supported operating systems",
+          "items": {
+            "type": "string",
+            "enum": ["macos", "windows", "linux"]
+          }
+        },
+        "ram": {
+          "type": "integer",
+          "description": "Minimum RAM required in MB"
+        },
+        "storage": {
+          "type": "integer",
+          "description": "Minimum storage space required in MB"
+        }
+      }
+    },
+    "changelogEntry": {
+      "type": "object",
+      "required": ["version", "date", "changes"],
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "Version this changelog entry applies to"
+        },
+        "date": {
+          "type": "string",
+          "format": "date",
+          "description": "Date of release in YYYY-MM-DD format"
+        },
+        "channel": {
+          "type": "string",
+          "description": "Which channel this entry belongs to"
+        },
+        "changes": {
+          "type": "array",
+          "description": "List of changes in this release",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "title": "Root Registry Index",
+      "type": "object",
+      "required": ["registryVersion", "lastUpdated", "games"],
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "Reference to the JSON schema"
+        },
+        "registryVersion": {
+          "type": "integer",
+          "description": "Schema version for compatibility checking",
+          "minimum": 1
+        },
+        "lastUpdated": {
+          "type": "string",
+          "format": "date",
+          "description": "Date the registry was last updated"
+        },
+        "games": {
+          "type": "object",
+          "description": "Map of game IDs to their index entries",
+          "additionalProperties": {
+            "$ref": "#/definitions/gameIndexEntry"
+          }
+        }
+      }
+    },
+    {
+      "title": "Per-Game Metadata",
+      "$ref": "#/definitions/gameMetadata"
+    }
+  ]
+}

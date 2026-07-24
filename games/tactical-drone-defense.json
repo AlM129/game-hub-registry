@@ -1,0 +1,64 @@
+{
+  "$schema": "../schema/registry.schema.json",
+  "id": "tactical-drone-defense",
+  "name": "Tactical Drone Defense",
+  "developer": "MCM Games",
+  "description": "Tactical Drone Defense is an intense 3D shooter where you battle endless waves of rogue robots to survive a hostile, trap-filled warehouse.",
+  "genre": "Shooter",
+  "tags": ["3d", "shooter", "action", "waves"],
+  "media": {
+    "thumbnail": {
+      "url": "cover.png",
+      "alt": "Tactical Drone Defense cover art"
+    }
+  },
+  "channels": {
+    "stable": {
+      "version": "1.4.0",
+      "releaseDate": "2026-07-06",
+      "download": null,
+      "requirements": {
+        "os": ["macos", "windows", "linux"],
+        "ram": 512,
+        "storage": 50
+      },
+      "releaseNotes": {
+        "version": "1.4.0",
+        "date": "2026-07-06",
+        "changes": [
+          "Initial stable release",
+          "Core gameplay loop",
+          "Basic weapons"
+        ]
+      }
+    },
+    "development": {
+      "version": "2.0.0-dev",
+      "releaseDate": "2026-07-20",
+      "download": null,
+      "notes": "Development build. Not yet stable. Available from source repository only."
+    }
+  },
+  "changelog": [
+    {
+      "version": "2.0.0-dev",
+      "date": "2026-07-20",
+      "channel": "development",
+      "changes": [
+        "New enemy types",
+        "Overhauled UI",
+        "Not yet stable"
+      ]
+    },
+    {
+      "version": "1.4.0",
+      "date": "2026-07-06",
+      "channel": "stable",
+      "changes": [
+        "Initial stable release",
+        "Core gameplay loop",
+        "Basic weapons"
+      ]
+    }
+  ]
+}

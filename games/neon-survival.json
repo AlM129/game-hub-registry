@@ -1,0 +1,56 @@
+{
+  "$schema": "../schema/registry.schema.json",
+  "id": "neon-survival",
+  "name": "Neon Survival",
+  "developer": "MCM Games",
+  "description": "Neon Survival is a fast-paced, synthwave-inspired, first-person shooter where you battle relentless geometric swarms using futuristic weapons and movement abilities.",
+  "genre": "FPS Shooter",
+  "tags": ["fps", "shooter", "synthwave", "3d", "action"],
+  "media": {
+    "thumbnail": {
+      "url": "cover.png",
+      "alt": "Neon Survival cover art"
+    }
+  },
+  "channels": {
+    "stable": {
+      "version": "1.0.0",
+      "releaseDate": "2026-07-11",
+      "download": null,
+      "requirements": {
+        "os": ["macos", "windows", "linux"],
+        "ram": 512,
+        "storage": 50
+      },
+      "releaseNotes": {
+        "version": "1.0.0",
+        "date": "2026-07-11",
+        "changes": [
+          "Fixed A and D keys being switched",
+          "Changed file structure"
+        ]
+      }
+    }
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-11",
+      "channel": "stable",
+      "changes": [
+        "Fixed A and D keys being switched",
+        "Changed file structure"
+      ]
+    },
+    {
+      "version": "0.2.0",
+      "date": "2026-07-04",
+      "channel": "alpha",
+      "changes": [
+        "Added achievements",
+        "Basic movement and shooting",
+        "Made the world infinite"
+      ]
+    }
+  ]
+}
