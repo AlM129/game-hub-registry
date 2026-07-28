@@ -5,7 +5,12 @@
   "developer": "MCM Games",
   "description": "Tactical Drone Defense is an intense 3D shooter where you battle endless waves of rogue robots to survive a hostile, trap-filled warehouse.",
   "genre": "Shooter",
-  "tags": ["3d", "shooter", "action", "waves"],
+  "tags": [
+    "3d",
+    "shooter",
+    "action",
+    "waves"
+  ],
   "media": {
     "thumbnail": {
       "url": "cover.png",
@@ -18,7 +23,11 @@
       "releaseDate": "2026-07-06",
       "download": null,
       "requirements": {
-        "os": ["macos", "windows", "linux"],
+        "os": [
+          "macos",
+          "windows",
+          "linux"
+        ],
         "ram": 512,
         "storage": 50
       },

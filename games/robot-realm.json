@@ -1,0 +1,60 @@
+{
+  "$schema": "../schema/registry.schema.json",
+  "id": "robot-realm",
+  "name": "Robot Realm",
+  "developer": "MCM Games",
+  "description": "Robot Realm is a fast-paced arcade survival game where you battle endless waves of hostile robots while collecting upgrades and surviving as long as possible.",
+  "genre": "Arcade",
+  "tags": [
+    "arcade",
+    "robots",
+    "survival",
+    "action"
+  ],
+  "media": {
+    "thumbnail": {
+      "url": "cover.png",
+      "alt": "Robot Realm cover art"
+    }
+  },
+  "channels": {
+    "stable": {
+      "version": "1.0.0",
+      "releaseDate": "2026-07-28",
+      "download": {
+        "url": "https://github.com/AlM129/robot-realm/releases/download/v1.0.0/robot-realm.zip",
+        "format": "zip",
+        "size": null,
+        "checksum": null
+      },
+      "requirements": {
+        "os": [
+          "macos",
+          "windows",
+          "linux"
+        ],
+        "ram": 256,
+        "storage": 5
+      },
+      "releaseNotes": {
+        "version": "1.0.0",
+        "date": "2026-07-28",
+        "changes": [
+          "Initial release.",
+          "First downloadable Game Hub title."
+        ]
+      }
+    }
+  },
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-28",
+      "channel": "stable",
+      "changes": [
+        "Initial release.",
+        "Added Game Hub download support."
+      ]
+    }
+  ]
+}
