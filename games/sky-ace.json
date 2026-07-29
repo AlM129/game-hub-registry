@@ -5,7 +5,12 @@
   "developer": "MCM Games",
   "description": "Sky Ace is a fast-paced 3D flight simulator where you pilot a robot jet through an endless sky, dodging dangerous mountains, managing fuel, and collecting golden rings to achieve the ultimate high score.",
   "genre": "Flight Simulator",
-  "tags": ["flight", "3d", "arcade", "endless"],
+  "tags": [
+    "flight",
+    "3d",
+    "arcade",
+    "endless"
+  ],
   "media": {
     "thumbnail": {
       "url": "cover.png",
@@ -16,9 +21,18 @@
     "stable": {
       "version": "2.0.0",
       "releaseDate": "2026-07-11",
-      "download": null,
+      "download": {
+        "url": "https://github.com/AlM129/sky-ace/releases/download/v2.0.0/sky-ace.zip",
+        "format": "zip",
+        "size": null,
+        "checksum": null
+      },
       "requirements": {
-        "os": ["macos", "windows", "linux"],
+        "os": [
+          "macos",
+          "windows",
+          "linux"
+        ],
         "ram": 512,
         "storage": 50
       },
