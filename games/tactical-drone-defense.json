@@ -21,7 +21,12 @@
     "stable": {
       "version": "1.4.0",
       "releaseDate": "2026-07-06",
-      "download": null,
+      "download": {
+        "url": "https://github.com/AlM129/tactical-drone-defense/releases/download/v1.4.0/tactical-drone-defense.zip",
+        "format": "zip",
+        "size": null,
+        "checksum": null
+      },
       "requirements": {
         "os": [
           "macos",
