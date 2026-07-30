@@ -10,7 +10,7 @@
       "genre": "Shooter",
       "featured": false,
       "thumbnail": "cover.png",
-      "metaUrl": "games/tactical-drone-defense.json"
+      "metaUrl": "games/tactical-drone-defense/game.json"
     },
     "sky-ace": {
       "id": "sky-ace",
@@ -19,7 +19,7 @@
       "genre": "Flight Simulator",
       "featured": false,
       "thumbnail": "cover.png",
-      "metaUrl": "games/sky-ace.json"
+      "metaUrl": "games/sky-ace/game.json"
     },
     "neon-survival": {
       "id": "neon-survival",
@@ -28,7 +28,7 @@
       "genre": "FPS Shooter",
       "featured": false,
       "thumbnail": "cover.png",
-      "metaUrl": "games/neon-survival.json"
+      "metaUrl": "games/neon-survival/game.json"
     }
   }
 }
