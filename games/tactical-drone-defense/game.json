@@ -22,7 +22,7 @@
       "version": "1.4.0",
       "releaseDate": "2026-07-06",
       "download": {
-        "url": "https://github.com/AlM129/tactical-drone-defense/releases/download/v1.4.0/tactical-drone-defense.zip",
+        "url": "https://github.com/AlM129/tactical-drone-defense/releases/download/v1.4.1/tactical-drone-defense.zip",
         "format": "zip",
         "size": null,
         "checksum": null
@@ -37,12 +37,10 @@
         "storage": 50
       },
       "releaseNotes": {
-        "version": "1.4.0",
-        "date": "2026-07-06",
+        "version": "1.4.1",
+        "date": "2026-07-30",
         "changes": [
-          "Initial stable release",
-          "Core gameplay loop",
-          "Basic weapons"
+          "Fixed an issue where completing a wave caused the game to stop progressing"
         ]
       }
     },
