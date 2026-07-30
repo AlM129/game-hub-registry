@@ -29,15 +29,6 @@
       "featured": false,
       "thumbnail": "cover.png",
       "metaUrl": "games/neon-survival.json"
-    },
-    "robot-realm": {
-      "id": "robot-realm",
-      "name": "Robot Realm",
-      "developer": "MCM Games",
-      "genre": "Arcade",
-      "featured": true,
-      "thumbnail": "cover.png",
-      "metaUrl": "games/robot-realm.json"
     }
   }
 }
