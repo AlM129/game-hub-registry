@@ -19,7 +19,7 @@
   },
   "channels": {
     "stable": {
-      "version": "1.4.0",
+      "version": "1.4.1",
       "releaseDate": "2026-07-06",
       "download": {
         "url": "https://github.com/AlM129/tactical-drone-defense/releases/download/v1.4.1/tactical-drone-defense.zip",
@@ -43,23 +43,15 @@
           "Fixed an issue where completing a wave caused the game to stop progressing"
         ]
       }
-    },
-    "development": {
-      "version": "2.0.0-dev",
-      "releaseDate": "2026-07-20",
-      "download": null,
-      "notes": "Development build. Not yet stable. Available from source repository only."
     }
   },
   "changelog": [
     {
-      "version": "2.0.0-dev",
-      "date": "2026-07-20",
-      "channel": "development",
+      "version": "1.4.1",
+      "date": "2026-07-30",
+      "channel": "stable",
       "changes": [
-        "New enemy types",
-        "Overhauled UI",
-        "Not yet stable"
+        "Fixed an issue where completing a wave caused the game to stop progressing"
       ]
     },
     {
