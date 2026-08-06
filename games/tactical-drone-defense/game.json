@@ -24,10 +24,10 @@
       "download": {
         "url": "https://github.com/AlM129/tactical-drone-defense/releases/download/v1.4.1/tactical-drone-defense.zip",
         "format": "zip",
-        "size": 776848,
+        "size": 776622,
         "checksum": {
           "algorithm": "sha256",
-          "hash": "3ccfa662cf783fa182fb5bf308f4f8c8da2728707c9d96d896c31c75d0da2cf4"
+          "hash": "9c0b98da53a71fc3e698c653bdd896f665315548eddae18b2feb00d9e7206d79"
         }
       },
       "requirements": {
