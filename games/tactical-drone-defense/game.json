@@ -20,12 +20,15 @@
   "channels": {
     "stable": {
       "version": "1.4.1",
-      "releaseDate": "2026-07-06",
+      "releaseDate": "2026-08-06",
       "download": {
         "url": "https://github.com/AlM129/tactical-drone-defense/releases/download/v1.4.1/tactical-drone-defense.zip",
         "format": "zip",
-        "size": null,
-        "checksum": null
+        "size": 776848,
+        "checksum": {
+          "algorithm": "sha256",
+          "hash": "3ccfa662cf783fa182fb5bf308f4f8c8da2728707c9d96d896c31c75d0da2cf4"
+        }
       },
       "requirements": {
         "os": [
