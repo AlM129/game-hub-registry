@@ -19,10 +19,10 @@
   },
   "channels": {
     "stable": {
-      "version": "2.0.0",
-      "releaseDate": "2026-07-11",
+      "version": "2.0.1",
+      "releaseDate": "2026-07-31",
       "download": {
-        "url": "https://github.com/AlM129/sky-ace/releases/download/v2.0.0/sky-ace.zip",
+        "url": "https://github.com/AlM129/sky-ace/releases/download/v2.0.1/sky-ace.zip",
         "format": "zip",
         "size": null,
         "checksum": "7161d7616dce3c429815a292d6ed727c3c032ea7f77f0b1069e6926988b3f370"
