@@ -25,10 +25,10 @@
       "download": {
         "url": "https://github.com/AlM129/neon-survival/releases/download/v1.0.0/neon-survival.zip",
         "format": "zip",
-        "size": 973428,
+        "size": 973434,
         "checksum": {
           "algorithm": "sha256",
-          "hash": "c46a1f58b7b5314d18418d403a4074d2e448da86cd6cbb3ad555c9a5f9a6b170"
+          "hash": "5a000697a7e374555f050068b68fd8fe67e774fa43480c7b0b4e95e9f9e62371"
         }
       },
       "requirements": {
