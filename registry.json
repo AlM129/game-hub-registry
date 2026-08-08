@@ -20,15 +20,6 @@
       "featured": false,
       "thumbnail": "cover.png",
       "metaUrl": "games/sky-ace/game.json"
-    },
-    "neon-survival": {
-      "id": "neon-survival",
-      "name": "Neon Survival",
-      "developer": "MCM Games",
-      "genre": "FPS Shooter",
-      "featured": false,
-      "thumbnail": "cover.png",
-      "metaUrl": "games/neon-survival/game.json"
     }
   }
 }
