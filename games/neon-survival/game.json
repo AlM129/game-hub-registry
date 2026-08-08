@@ -20,15 +20,15 @@
   },
   "channels": {
     "stable": {
-      "version": "1.0.0",
-      "releaseDate": "2026-08-07",
+      "version": "1.0.1",
+      "releaseDate": "2026-08-08",
       "download": {
-        "url": "https://github.com/AlM129/neon-survival/releases/download/v1.0.0/neon-survival.zip",
+        "url": "https://github.com/AlM129/neon-survival/releases/download/v1.0.1/neon-survival.zip",
         "format": "zip",
-        "size": 973434,
+        "size": 973463,
         "checksum": {
           "algorithm": "sha256",
-          "hash": "5a000697a7e374555f050068b68fd8fe67e774fa43480c7b0b4e95e9f9e62371"
+          "hash": "a6ff2f2c3451e9cd6afc5bb63ade18094124a50d1033d1ef0f3146a691e78e3d"
         }
       },
       "requirements": {
@@ -41,16 +41,23 @@
         "storage": 50
       },
       "releaseNotes": {
-        "version": "1.0.0",
-        "date": "2026-07-11",
+        "version": "1.0.1",
+        "date": "2026-08-08",
         "changes": [
-          "Fixed A and D keys being switched",
-          "Changed file structure"
+          "[Fix] Fixed Neon Survival high scores and session statistics resetting after exiting the game before reaching the Game Over screen. Current stats are now properly saved when returning to the Game Hub launcher."
         ]
       }
     }
   },
   "changelog": [
+    {
+      "version": "1.0.1",
+      "date": "2026-08-08",
+      "channel": "stable",
+      "changes": [
+        "[Fix] Fixed Neon Survival high scores and session statistics resetting after exiting the game before reaching the Game Over screen. Current stats are now properly saved when returning to the Game Hub launcher."
+      ]
+    },
     {
       "version": "1.0.0",
       "date": "2026-07-11",
