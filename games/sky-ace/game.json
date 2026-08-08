@@ -3,6 +3,8 @@
   "id": "sky-ace",
   "name": "Sky Ace",
   "developer": "MCM Games",
+  "achievementsEnabled": true,
+  "achievementsFile": "achievements.json",
   "description": "Sky Ace is a fast-paced 3D flight simulator where you pilot a robot jet through an endless sky, dodging dangerous mountains, managing fuel, and collecting golden rings to achieve the ultimate high score.",
   "genre": "Flight Simulator",
   "tags": [

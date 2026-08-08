@@ -1,0 +1,56 @@
+{
+  "trainee_takeoff": {
+    "title": "Flight School",
+    "description": "Take off for the very first time.",
+    "icon": "🛫",
+    "rarity": "common"
+  },
+  "trainee_boost": {
+    "title": "Need for Speed",
+    "description": "Hit your first speed boost.",
+    "icon": "⚡",
+    "rarity": "uncommon"
+  },
+  "trainee_rings": {
+    "title": "Shiny!",
+    "description": "Collect 5 rings in one flight.",
+    "icon": "🪙",
+    "rarity": "common"
+  },
+  "expert_survivor": {
+    "title": "Expert Pilot",
+    "description": "Survive a flight for 60 seconds.",
+    "icon": "⏱️",
+    "rarity": "uncommon"
+  },
+  "expert_fuel": {
+    "title": "Pit Stop",
+    "description": "Collect 5 fuel cans in one flight.",
+    "icon": "⛽",
+    "rarity": "uncommon"
+  },
+  "expert_rings": {
+    "title": "Ring Master",
+    "description": "Collect 25 rings in one flight.",
+    "icon": "💍",
+    "rarity": "rare"
+  },
+  "ace_survivor": {
+    "title": "Sky Ace",
+    "description": "Survive a grueling 3 minutes.",
+    "icon": "👑",
+    "rarity": "epic"
+  },
+  "ace_speed": {
+    "title": "Supersonic",
+    "description": "Hit 10 boosts in one flight.",
+    "icon": "🚀",
+    "rarity": "rare"
+  },
+  "ace_rings": {
+    "title": "Dragon's Hoard",
+    "description": "Collect 100 rings in one flight.",
+    "icon": "🐉",
+    "rarity": "legendary"
+  }
+}
