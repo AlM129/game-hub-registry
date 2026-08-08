@@ -26,10 +26,10 @@
       "download": {
         "url": "https://github.com/AlM129/sky-ace/releases/download/v2.0.1/sky-ace.zip",
         "format": "zip",
-        "size": 579168,
+        "size": 579793,
         "checksum": {
           "algorithm": "sha256",
-          "hash": "02d5fad3ebc78e64163d02dd8ef08d88ebed1aa6ddd6b4919b6bff1c1a8baf55"
+          "hash": "d1b21a471ff72b98a00eb20b8552f00b0a6ac2084fc4ab875f72627549b6bd00"
         }
       },
       "requirements": {
